@@ -1,18 +1,28 @@
 <meta charset="UTF-8">
 <script>
-function pulaLinha() {
-	document.write("<br>");
-}
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
 
     var ano = 2020;
-    document.write("Flávio tem " + (ano - 1985) + " anos");
-    pulaLinha();
 
-    document.write("Joaquim tem " + (ano - 1994) + " anos");
-    pulaLinha();
+    mostra();
+
+    mostra("Calopsita!");
+
+    mostra("Flávio tem " + (ano - 1985) + " anos");
+    
+    mostra("Joaquim tem " + (ano - 1994) + " anos");
     
     ano = 2021;
-    document.write("Barney tem " + (ano - 2003) + " anos");
-    pulaLinha();
+
+    mostra("Barney tem " + (ano - 2003) + " anos");
+
+    mostra("Olá pessoal!");
 
 </script>
