@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+<script>
+    let anoDescobrimento = 1500;
+    let anoAtual = 2020;
+    let anosPassados = anoAtual - anoDescobrimento;
+    let mediaIdade = 28;
+
+    let geracoesPassadas = anosPassados / mediaIdade;
+
+    function mostra(geracoes) {
+        document.write(geracoes);
+    }
+
+    function pulaLinha() {
+        document.write("<br>")
+    }
+
+    mostra("Se passaram " + Math.floor(geracoesPassadas) + " gerações")
+
+</script>
