@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+<script>
+
+    function pularLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(response) {
+        document.write(response);
+        pularLinha();
+    }
+
+    function calculaImc(peso, altura) {
+        var imc = peso / Math.pow(altura, 2);
+        return imc;
+    }
+
+    var imcAndreson = calculaImc(83, 1.77);
+    var imcNagui = calculaImc(73, 1.65);
+
+    mostra(imcAndreson);
+    mostra(imcNagui);
+
+</script>
