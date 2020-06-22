@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+<script>
+  function mostra(frase) {
+
+    document.write(frase)
+    pulaLinha();
+  }
+
+  function pulaLinha() {
+
+    document.write("<br><br>")
+  }
+
+  var limite = 30;
+
+while (limite <= 40) {
+
+  if (limite == 33) {
+    limite = limite + 1;
+  }
+
+  if (limite == 37) {
+    limite = limite + 1;
+  }
+  else {
+    mostra(limite);
+    limite = limite + 1;    
+  }
+
+}
+
+  mostra("FIM");
+</script>
