@@ -1,0 +1,47 @@
+<meta charset="UTF-8">
+<script>
+
+  function pulaLinha() {
+
+    document.write("<br>");
+    document.write("<br>");
+  }
+
+  function mostra(frase) {
+
+    document.write(frase);
+    pulaLinha();
+  }
+
+  function calculaImc(altura, peso) {
+
+    return peso / Math.pow(altura, 2);
+
+  }
+
+  var numeroPensado = Math.round(Math.random() * 10);
+  // var numeroPensado = 4;
+
+  var tentativas = 1;
+  var numeroTentativas = 3;
+
+  while (tentativas <= numeroTentativas) {
+
+    var chute = parseInt(prompt("Digite seu chute!"));
+
+    if (chute == numeroPensado) {
+
+      mostra("Você acertou, o número pensado era " + numeroPensado);
+      tentativas = numeroTentativas;
+      // break;
+
+    } else {
+      mostra("Você errou");
+    }
+    tentativas++;
+  }
+
+  mostra("FIM");
+
+
+</script>
