@@ -6,9 +6,10 @@
 
 <script>
 
-  var segredo = 5;
+  var segredo = Math.round(Math.random() * 10);
 
   var input = document.querySelector("input");
+  input.focus();
 
   function verifica() {
 
@@ -20,6 +21,8 @@
 
       alert("Você errou!");
     }
+    input.value = "";
+    input.focus();
   }
 
   var button = document.querySelector("button");
